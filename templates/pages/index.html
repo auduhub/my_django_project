@@ -1,7 +1,15 @@
 {% extends 'base.html' %}
 {% load humanize %}
+{% block title %}
+  | home page
+{% endblock %}
+
 {% block content %}
      <!-- Showcase -->
+  <div class="container mt-3" >
+    {% include '_partials/_alerts.html' %}
+  </div>
+
   <section id="showcase">
     <div class="container text-center">
       <div class="home-search p-5">
